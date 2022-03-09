@@ -1,0 +1,133 @@
+.aplica {
+    width: 100%;
+    height: 100vh;
+    background: url('../../assets/aplica.jpg') no-repeat center center/cover;
+    
+}
+
+.container {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+
+.container .esquerda {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding: 1rem 4rem;
+    max-width: 600px;
+}
+
+.aplica .container p {
+    margin: 1.5rem 0;
+}
+.container .esquerda {
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+    padding: 1rem;
+}
+.container .esquerda h1 {
+    color: #fff;
+    font-weight: 800;
+
+}
+.container .esquerda a {
+    color: #fff;
+    margin: 1rem;
+    border: 2px solid #fff;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.container .esquerda p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 1000;
+}
+
+.aplica .direita {
+    width: 100%;
+}
+
+.direita .img-container {
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    font-size: 30px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.direita .img {
+    height: 100%;
+    max-width: 100%;
+    border: 1px solid #fff;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.direita .img-principal {
+    height: 250px;
+    width: 100%;
+
+}
+.direita .img-fundo {
+    height: 100%;
+}
+
+
+@media screen and (max-width: 860px) {
+    .aplica {
+        margin-top: -1rem;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container {
+        width: 100%;
+        height: 150px;
+        padding: 2rem 1rem;
+        
+    }
+    .container .esquerda {
+        align-items: center;
+        justify-content: center;
+    }
+    .container h1 {
+        font-size: 1.4rem;
+    }
+    .container .esquerda p {
+        font-size: 1.1rem;
+    }
+    .container .esquerda a {
+        font-size: 0.8rem;
+    }
+    .container .direita {
+        width: 100%;
+        height: 100%;
+    }
+    .container .direita img {
+        width: 400px;
+        height: 120px;
+    }
+    .direita .img-principal {
+        width: 100%;
+        height: 100%;
+    }
+    .direita .img-fundo {
+        width: 100%;
+        height: 100%;
+    }
+    
+
+}

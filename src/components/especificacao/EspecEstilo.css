@@ -1,0 +1,84 @@
+.especificacao {
+    margin-top: -20px;
+    width: 100%;
+    height: 100vh;
+    background: url('../../assets/ink.jpg') no-repeat center center/cover;
+}
+.especificacao h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    padding: 3rem;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+.corpo {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.corpo .card {
+    background: rgba(0, 0, 0, .9);
+    border: 1px solid #fff;
+    color: #fff;
+}
+.card {
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.card:hover {
+    background: #402cf3;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+
+.card .barra {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    margin: 1.5rem auto;
+    display: block;
+}
+.card a {
+    cursor: pointer;
+    border: 1px solid #fff;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 0 1rem;
+    align-items: center;
+}
+.card a:hover {
+    background-color: blue;
+    font-weight: 600;
+}
+
+.card p {
+    color: #eee;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 980px) {
+    .especificacao {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+
+    .corpo {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    
+}
